@@ -1,20 +1,16 @@
 server:  
-  port: ${PORT:8082}
+  port: ${PORT:8083}
 
 spring:  
   application:
-    name: account-service
-
-logging:
-  level:
-    org.springframework.security: DEBUG
+    name: customer-service
       
 security:
   user:
     password: none
   oauth2:
     client:
-      client-id: account-service
+      client-id: customer-service
       client-secret: secret
       scope: read
       access-token-uri: http://localhost:9999/oauth/token
